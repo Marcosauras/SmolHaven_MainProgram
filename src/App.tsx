@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-
 import "./global.css";
 import SigninForm from "./_auth/forms/SigninForm";
 import SignupForm from "./_auth/forms/SignupForm";
@@ -9,7 +8,7 @@ import RootLayout from "./_root/RootLayout";
 
 const App = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gray-100">
+    <main className="flex min-h-screen flex-col">
       <Routes>
         {/* Public */}
         <Route element={<AuthLayout />}>
@@ -23,6 +22,7 @@ const App = () => {
         </Route>
       </Routes>
     </main>
+
   );
 };
 
